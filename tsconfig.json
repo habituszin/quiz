@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
+    "baseUrl": "./src",
+    "resolveJsonModule": true,
+    "target": "ES6",
+    "module": "CommonJS",
+    "outDir": "dist",
+    "rootDir": "src",
+    "lib": ["DOM"],
+    "composite": true,
+  },
+  "include": ["src"],
+}
