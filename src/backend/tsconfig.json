@@ -4,14 +4,17 @@
     "moduleResolution": "node",
     "experimentalDecorators": true,
     "esModuleInterop": true,
-    "baseUrl": "./src",
+    "baseUrl": ".",
     "resolveJsonModule": true,
+    "allowJs": true,
     "target": "ES6",
+    "outDir": "../../compiled",
     "module": "CommonJS",
-    "outDir": "dist",
-    "rootDir": "src",
-    "lib": ["DOM"],
-    "composite": true,
+    "plugins": [
+      {
+        "transform": "typescript-transform-paths"
+      }
+    ],
   },
-  "include": ["src"],
+  "exclude": ["../../node_modules", "views/web-components"]
 }
