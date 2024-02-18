@@ -22,5 +22,9 @@ export default class API {
     this.server.get("/healthCheck", (req: Request, res: Response) => {
       res.status(200).send();
     });
+
+    this.server.get('/', (req: Request, res: Response) => {
+      res.send('Hello, world!!!!');
+    });
   }
 }

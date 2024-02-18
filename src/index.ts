@@ -1,4 +1,4 @@
-import API from "api/indesx";
+import API from "./api/index";
 
 const api = new API();
 
